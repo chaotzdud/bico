@@ -1,0 +1,137 @@
+/* Variáveis para reaproveitamento */
+:root {
+  --primary-color: #FFA748;
+  --secondary-color: #3c2e2e;
+  --text-color: #333;
+  --text-light: #777;
+  --bg-color: #F3F3F3;
+  --card-radius: 16px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1000;
+}
+
+.top-bar .back {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.top-bar .top-text {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.container {
+  padding: 30px;
+  margin-top: 64px;
+}
+
+h2, h3 {
+  margin-bottom: 12px;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.chat-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-info strong {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.chat-info p {
+  font-size: 14px;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-time {
+  font-size: 12px;
+  color: #e74c3c;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--secondary-color);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  font-size: 20px;
+}
+
+.bottom-nav i {
+  color: white;
+  transition: color 0.2s;
+}
+
+.bottom-nav i:hover {
+  color: #ffcc4d;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

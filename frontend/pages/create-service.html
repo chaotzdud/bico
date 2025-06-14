@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicar</title>
+  <link rel="stylesheet" href="../assets/css/create-service.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <a href="home.html"><span class="back"><i class="fas fa-angle-left"></i></span></a>
+    <span class="top-text">Publicar</span>
+  </header>
+
+<main class="container">
+  <form id="service-form" enctype="multipart/form-data">
+    <input type="text" id="title" name="title" placeholder="Título" required>
+    <textarea id="description" name="description" placeholder="Descrição" required></textarea>
+    <input type="number" id="price" name="price" step="0.01" placeholder="Valor" required>
+    <input type="text" id="location" name="location" placeholder="Localização" required>
+    <label class="label-left">Adicionar imagens</label>
+    <label class="add-img" for="upload-img">
+    <i class="fas fa-plus"></i>
+    </label>
+    <input type="file" id="upload-img" name="image" accept="image/*" required>
+    <button type="submit">Publicar</button>
+  </form>
+  </main>
+
+  <footer class="bottom-nav">
+    <a href="home.html"><i class="fas fa-home"></i></a>
+    <a href="list-services.html"><i class="fas fa-search"></i></a>
+    <a href="create-service.html"><i class="fas fa-plus"></i></a>
+    <a href="chat-history.html"><i class="fas fa-comment-dots"></i></a>
+    <a href="my-profile.html"><i class="fas fa-user-alt"></i></a>
+  </footer>
+
+  <script src="../assets/js/services/create-service.js"></script>
+</body>
+</html>

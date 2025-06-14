@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="../assets/css/register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="top-bar">
+    <a href="login.html"><span class="back"><i class="fas fa-angle-left"></i></span></a>
+    <span class="top-text">Cadastro</span>
+  </header>
+  
+  <div class="container">
+    <form id="register-form">
+      <input type="text" id="fname" name="fname" placeholder="Digite seu nome" required>
+      <input type="text" id="lname" name="lname" placeholder="Digite seu sobrenome" required>
+      <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+      <label class="label-left">Data de nascimento</label>
+      <input type="date" id="dbirth" name="dbirth" placeholder="Data de nascimento" required>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="../assets/js/auth/register.js"></script>
+</body>
+</html>
